@@ -232,7 +232,7 @@ function addIntern () {
 async function  renderHTML () {
   let data = await render(employees);
 //   console.log(data,"final HTML");
-  fs.writeFile("./output/team.html", data, ()=> {
+  fs.writeFile("./team.html", data, ()=> {
       console.log("file created!");
       exit();
   })
